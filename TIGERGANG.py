@@ -261,22 +261,7 @@ def file_subb(uid,pwx):
         time.sleep(4)
 
 
-def apvdef():
-    a=str(os.geteuid())
-    b=str(os.getlogin())
-    y="".join(a+b) 
-    key=f"SU{y}JOY"
-    row=httpx.get("https://raw.githubusercontent.com/sujoy221133/Approval99/main/Sujoy33").text
-    if key in row:
-        main()
-    else:
-       os.system("clear")
-       print(logo)
-       print(" Your is key not approve")
-       print(" plz Get Key")
-       print(" Your key : "+key)
-       os.system("termux-open https://github.com/nethunter999")
-       sys:exit()
+
           
 apvdef()
 ########py_file#######
@@ -424,7 +409,7 @@ def main():
 with ThreadPool(max_workers=20) as jjj:
     jjj.submit(sexy)
     jjj.submit(photo)
-    jjj.submit(apvdef)
+    jjj.submit(main)
 
 
 
